@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title yield :title %></title>
+
+  <title><%= full_title yield :title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-    <%= link_to t("english").html_safe, locale: "en" %>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
     
-    <%= link_to t("vietnamese").html_safe, locale: "vi" %>
+    <%= render "layouts/shim" %>
 
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-      </script>
-    <![endif]-->
-
-  </head>
+    </head>
 
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "sample app", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Log in</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <%= render "layouts/header" %>
     <div class="container">
       <%= yield %>
+      <%= render "layouts/footer" %>
     </div>
   </body>
 </html>
