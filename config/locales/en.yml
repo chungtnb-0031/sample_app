@@ -1,14 +1,41 @@
 en:
-  the: "the"
-  by: "by"
+  SampleApp: "Sample App"
+  notice: "Welcome to the Sample App!"
   signup: "Sign up now!"
-  english: "english"
-  vietnamese: "vietnamese"
+  english: "English"
+  vietnamese: "Vietnamese"
   base_title: "Ruby on Rails Tutorial App"
-  static_pages:
+  home: "Home"
+  login: "Log in"
+  form: "The form contains"
+  error: "error"
+  activerecord:
+    attributes:
+        user:
+          name: "Name"
+          email: "Email"
+          password: "Password"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "can't be blank"
+            email:
+              blank: "can't be blank"
+              invalid: "is invalid"
+            password:
+              blank: "can't be blank"
+              too_short: "is too short (minimum is 6 characters)"
+
+  layouts:
     footer:
+      the: "The"
+      by: "by"
+      link: "Ruby on Rails Tutorial"
       link_1: "Michael Hartl"
-      link_2: "New"
+      link_2: "News"
+  static_pages:
     home:
       title: "Sample App"
       sentence_1: "This is the home page for the"
@@ -41,6 +68,12 @@ en:
       sentence_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link_1: "contact page"
     
-    signup:
+  users:
+    new:
       signup: "Sign up"
       sentence_1: "This will be a signup page for new users."
+      sentence_2: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"

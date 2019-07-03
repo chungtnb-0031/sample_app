@@ -1,0 +1,5 @@
+user_check:
+  max_name: 50
+  max_email: 255
+  min_password: 6
+ava_size: 80
