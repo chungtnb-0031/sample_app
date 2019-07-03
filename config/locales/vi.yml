@@ -1,4 +1,7 @@
 vi:
+  the: "the"
+  by: "by"
+  signup: "Sign up now!"
   english: "tiếng anh"
   vietnamese: "tiếng việt"
   base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
@@ -18,7 +21,7 @@ vi:
       sentence_3: ""
 
     about:
-      title:  "Về"
+      title:  "Thông tin"
       sentence_1: "Cuốn"
       link_1: "Hướng dẫn về Ruby on Rails"
       sentence_2: "là một"
