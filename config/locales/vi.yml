@@ -1,20 +1,50 @@
 vi:
-  the: "the"
-  by: "by"
-  signup: "Sign up now!"
-  english: "tiếng anh"
-  vietnamese: "tiếng việt"
+  SampleApp: "Ứng dụng mẫu"
+  notice: "Chào mừng tới ứng dụng!"
+  signup: "Đăng kí ngay!"
+  english: "Tiếng Anh"
+  vietnamese: "Tiếng Việt"
   base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  home: "Trang chủ"
+  login: "Đăng nhập"
+  form: "Biểu mẫu bao gồm"
+  error: "lỗi"
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống"
+            email:
+              blank: "không được để trống"
+              invalid: "không hợp lệ"
+            password:
+              blank: "không được để trống"
+              too_short: "quá ngắn (ít nhất 6 kí tự)"
+  layouts:
+    footer:
+      the: " "
+      by: "bởi"
+      link: "Ruby on Rails Tutorial"
+      link_1: "Michael Hartl"
+      link_2: "Tin tức"
   static_pages:
     home:
       title: "Ứng dụng mẫu"
       sentence_1: "Đây là trang chủ cho ứng dụng"
       link_1: "Hướng dẫn về Ruby on Rails"
       sentence_2: "."
+      logo: "Rails logo"
 
     help:
       title: "Trợ giúp"
-      sentence_1: "Tìm kiếm trợ giúp về Ruby on rails tutorial tại"
+      sentence_1: "Tìm kiếm trợ giúp về Ruby on Rails Tutorial tại"
       link_1: "Trang trợ giúp hướng dẫn Rails. "
       sentence_2: "Tìm trợ giúp trên cùng app , tìm tại"
       link_2: "Hướng dẫn về Ruby on Rails"
@@ -33,6 +63,17 @@ vi:
       sentence_5: "Đây là ứng dụng mẫu cho hướng dẫn."
 
     contact:
-      title:  "Liên hệ"
-      sentence_1: "Liên hệ với hướng dẫn của Ruby on rails về ứng dụng mẫu tại"
+      title: "Liên hệ"
+      sentence_1: "Liên hệ với hướng dẫn của Ruby on Rails về ứng dụng mẫu tại"
       link_1: "trang liên hệ"
+    
+  users:
+    new:
+      signup: "Đăng kí"
+      sentence_1: "Trang đăng kí cho người dùng mới"
+      sentence_2: "Tạo tài khoản"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      
