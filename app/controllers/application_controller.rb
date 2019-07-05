@@ -1,11 +1,11 @@
 class ApplicationController < ActionController::Base
-  def hello
-    render html: "hello, world!"
-  end
+  protect_from_forgery with: :exception
+  include SessionsHelper
 
   before_action :set_locale
 
   private
+  
   def set_locale
     locale = params[:locale].to_s.strip.to_sym
     I18n.locale =
