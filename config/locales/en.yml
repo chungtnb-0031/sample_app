@@ -49,6 +49,7 @@ en:
       email: "Email"
       password: "Password"
       ask: "New user?"
+      remember: "Remember me on this computer"
     create:
       notice: "Invalid email/password combination"
   static_pages:

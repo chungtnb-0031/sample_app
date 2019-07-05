@@ -49,6 +49,7 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       ask: "Người dùng mới?"
+      remember: "Nhớ tôi trên máy tính này"
     create:
       notice: "Email/ Mật khẩu không hợp lệ"
   static_pages:
