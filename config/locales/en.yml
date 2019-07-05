@@ -1,6 +1,5 @@
 en:
   SampleApp: "Sample App"
-  notice: "Welcome to the Sample App!"
   signup: "Sign up now!"
   english: "English"
   vietnamese: "Vietnamese"
@@ -15,6 +14,7 @@ en:
           name: "Name"
           email: "Email"
           password: "Password"
+          password_confirmation: "Password Confirmation"
     errors:
       models:
         user:
@@ -24,17 +24,33 @@ en:
             email:
               blank: "can't be blank"
               invalid: "is invalid"
+              taken: "has already been taken"
             password:
               blank: "can't be blank"
               too_short: "is too short (minimum is 6 characters)"
-
+            password_confirmation:
+              confirmation: "doesn't match Password"
   layouts:
+    header:
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
     footer:
       the: "The"
       by: "by"
       link: "Ruby on Rails Tutorial"
       link_1: "Michael Hartl"
       link_2: "News"
+  sessions:
+    new:
+      title: "Log in"
+      email: "Email"
+      password: "Password"
+      ask: "New user?"
+    create:
+      notice: "Invalid email/password combination"
   static_pages:
     home:
       title: "Sample App"
@@ -77,3 +93,5 @@ en:
       email: "Email"
       password: "Password"
       confirmation: "Confirmation"
+    create:
+      notice: "Welcome to the Sample App!"

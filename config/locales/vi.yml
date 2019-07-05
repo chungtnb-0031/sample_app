@@ -1,6 +1,5 @@
 vi:
   SampleApp: "Ứng dụng mẫu"
-  notice: "Chào mừng tới ứng dụng!"
   signup: "Đăng kí ngay!"
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
@@ -15,6 +14,7 @@ vi:
         name: "Tên"
         email: "Email"
         password: "Mật khẩu"
+        password_confirmation: "Mật khẩu xác nhận"
     errors:
       models:
         user:
@@ -24,16 +24,33 @@ vi:
             email:
               blank: "không được để trống"
               invalid: "không hợp lệ"
+              taken: "đã tồn tại"
             password:
               blank: "không được để trống"
               too_short: "quá ngắn (ít nhất 6 kí tự)"
+            password_confirmation:
+              confirmation: "không khớp với mật khẩu"
   layouts:
+    header:
+      user: "Người dùng"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      logout: "Đăng xuất"
+      account: "Tài khoản"
     footer:
       the: " "
       by: "bởi"
       link: "Ruby on Rails Tutorial"
       link_1: "Michael Hartl"
       link_2: "Tin tức"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      ask: "Người dùng mới?"
+    create:
+      notice: "Email/ Mật khẩu không hợp lệ"
   static_pages:
     home:
       title: "Ứng dụng mẫu"
@@ -51,7 +68,7 @@ vi:
       sentence_3: ""
 
     about:
-      title:  "Thông tin"
+      title: "Thông tin"
       sentence_1: "Cuốn"
       link_1: "Hướng dẫn về Ruby on Rails"
       sentence_2: "là một"
@@ -76,4 +93,5 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
-      
+    create:
+      notice: "Chào mừng tới ứng dụng!"
