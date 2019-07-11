@@ -1,10 +1,8 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token
+  before_create :create_activation_digest
   before_save :downcase_email
 
-  validates :name,
-    presence: true,
-    length: {maximum: Settings.user_check.max_name}
+  attr_accessor :remember_token, :activation_token
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
@@ -14,10 +12,15 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
 
+  validates :name,
+    presence: true,
+    length: {maximum: Settings.user_check.max_name}
+
   has_secure_password
   validates :password,
     presence: true,
-    length: {minimum: Settings.user_check.min_password}
+    length: {minimum: Settings.user_check.min_password},
+    allow_nil: true
 
   class << self
     def digest string
@@ -40,8 +43,8 @@ class User < ApplicationRecord
   end
 
   def authenticated? remember_token
-    return false if remember_digest.nil?
-    BCrypt::Password.new(remember_digest).is_password? (remember_token)
+    return false unless remember_digest
+    BCrypt::Password.new(remember_digest).is_password? remember_token
   end
 
   def forget
@@ -52,5 +55,10 @@ class User < ApplicationRecord
 
   def downcase_email
     email.downcase!
+  end
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
   end
 end

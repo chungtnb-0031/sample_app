@@ -52,6 +52,8 @@ en:
       remember: "Remember me on this computer"
     create:
       notice: "Invalid email/password combination"
+      user: "Welcome User"
+      admin: "Welcome Admin"
   static_pages:
     home:
       title: "Sample App"
@@ -95,4 +97,35 @@ en:
       password: "Password"
       confirmation: "Confirmation"
     create:
-      notice: "Welcome to the Sample App!"
+      success: "Welcome to the Sample App!"
+      danger: "Create Failed"
+    update:
+      notice: "Profile updated!"
+    destroy:
+      success: "User deleted!"
+      danger: "Delete failed!"
+      delete_admin: "Cannot delete another admin."
+    index:
+      title: "All users"
+      notice: "Please log in!"
+    edit:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+      title: "Edit user"
+      sentence_1: "Update your profile"
+      sentence_2: "Save changes"
+      sentence_3: "Change"
+      danger: "You do not have this ability."
+    user:
+      link_1: "Delete"
+      notice: "You sure?"
+    user_not_found: "User not found"
+  views:
+    pagination:
+      first: "« FIRST"
+      last: "LAST »"
+      previous: "‹ PREV"
+      next: "NEXT ›"
+      truncate: "…"

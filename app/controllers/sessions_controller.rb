@@ -5,8 +5,9 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
       log_in user
+      check_type user
       check_remember user
-      redirect_to user
+      redirect_back_or user
     else
       flash.now[:danger] = t ".notice"
       render :new
@@ -21,6 +22,14 @@ class SessionsController < ApplicationController
   private
 
   def check_remember user
-    params[:session][:remember_me] == "1" ? remember(user) : forget(user)
+    if params[:session][:remember_me] == Settings.remember
+      remember user
+    else
+      forget user
+    end
+  end
+
+  def check_type _user
+    flash[:success] = current_user.admin? ? t(".admin") : t(".user")
   end
 end
