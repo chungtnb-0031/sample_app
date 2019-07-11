@@ -54,6 +54,7 @@ vi:
       notice: "Email/ Mật khẩu không hợp lệ"
       user: "Xin chào người dùng"
       admin: "Xin chào Admin"
+      message: "Tài khoản chưa được kích hoạt. Hãy kiểm tra link kích hoạt trong email của bạn."
   static_pages:
     home:
       title: "Ứng dụng mẫu"
@@ -99,6 +100,7 @@ vi:
     create:
       success: "Chào mừng tới ứng dụng!"
       danger: "Đăng kí bị lỗi"
+      notice: "Hãy kiểm tra mail của bạn để kích hoạt tài khoản!"
     update:
       notice: "Hồ sơ đã được cập nhật!"
     destroy:
@@ -129,3 +131,13 @@ vi:
       previous: "‹ Trước"
       next: "Sau ›"
       truncate: "…"
+  account_activations:
+    success: "Tài khoản được kích hoạt!"
+    fail: "Link kích hoạt không hợp lệ"
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      hi: "Xin chào"
+      to: "to@example.org"
+      sentence_1: "Chào mừng tới ứng dụng mẫu! Nhấp vào link dưới đây để kích hoạt tài khoản:"
+  activate: "Kích hoạt"
