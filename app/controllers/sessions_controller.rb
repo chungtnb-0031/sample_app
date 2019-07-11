@@ -4,10 +4,7 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
-      log_in user
-      check_type user
-      check_remember user
-      redirect_back_or user
+      check_activated user
     else
       flash.now[:danger] = t ".notice"
       render :new
@@ -31,5 +28,17 @@ class SessionsController < ApplicationController
 
   def check_type _user
     flash[:success] = current_user.admin? ? t(".admin") : t(".user")
+  end
+
+  def check_activated user
+    if user.activated?
+      log_in user
+      check_type user
+      check_remember user
+      redirect_back_or user
+    else
+      flash[:warning] = t ".message"
+      redirect_to root_url
+    end
   end
 end

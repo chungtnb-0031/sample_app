@@ -83,10 +83,10 @@ en:
       sentence_5: "This is the sample application for the tutorial."
 
     contact:
-      title:  "Contact"
+      title: "Contact"
       sentence_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       link_1: "contact page"
-    
+
   users:
     new:
       signup: "Sign up"
@@ -99,6 +99,7 @@ en:
     create:
       success: "Welcome to the Sample App!"
       danger: "Create Failed"
+      notice: "Please check your email to activate your account!"
     update:
       notice: "Profile updated!"
     destroy:
@@ -129,3 +130,13 @@ en:
       previous: "‹ PREV"
       next: "NEXT ›"
       truncate: "…"
+  account_activations:
+    success: "Account activated!"
+    fail: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      subject: "Account activation"
+      hi: "Hi"
+      to: "to@example.org"
+      sentence_1: "Welcome to the Sample App! Click on the link below to activate your account:"
+  activate: "Activate"
