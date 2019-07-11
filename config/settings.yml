@@ -2,4 +2,8 @@ user_check:
   max_name: 50
   max_email: 255
   min_password: 6
-ava_size: 80
+user:
+  ava_size: 80
+  gravatar_size: 50
+per_page_user : 10
+remember: "1"

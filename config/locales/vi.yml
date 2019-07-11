@@ -52,6 +52,8 @@ vi:
       remember: "Nhớ tôi trên máy tính này"
     create:
       notice: "Email/ Mật khẩu không hợp lệ"
+      user: "Xin chào người dùng"
+      admin: "Xin chào Admin"
   static_pages:
     home:
       title: "Ứng dụng mẫu"
@@ -95,4 +97,35 @@ vi:
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
     create:
-      notice: "Chào mừng tới ứng dụng!"
+      success: "Chào mừng tới ứng dụng!"
+      danger: "Đăng kí bị lỗi"
+    update:
+      notice: "Hồ sơ đã được cập nhật!"
+    destroy:
+      success: "Đã xoá người dùng!"
+      danger: "Xoá lỗi!"
+      delete_admin: "Không thể xoá admin khác."
+    index:
+      title: "Danh sách người dùng"
+      notice: "Xin hãy đăng nhập!"
+    edit:
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      title: "Thay đổi hồ sơ"
+      sentence_1: "Cập nhật hồ sơ"
+      sentence_2: "Lưu thay đổi"
+      sentence_3: "Thay đổi"
+      danger: "Bạn không có quyền thực hiện này"
+    user:
+      link_1: "Xoá"
+      notice: "Xác nhận?"
+    user_not_found: "Không tìm thấy người dùng!"
+  views:
+    pagination:
+      first: "« Đầu"
+      last: "Cuối »"
+      previous: "‹ Trước"
+      next: "Sau ›"
+      truncate: "…"
