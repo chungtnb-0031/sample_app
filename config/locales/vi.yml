@@ -50,6 +50,7 @@ vi:
       password: "Mật khẩu"
       ask: "Người dùng mới?"
       remember: "Nhớ tôi trên máy tính này"
+      forgot: "(Quên mật khẩu)"
     create:
       notice: "Email/ Mật khẩu không hợp lệ"
       user: "Xin chào người dùng"
@@ -140,4 +141,27 @@ vi:
       hi: "Xin chào"
       to: "to@example.org"
       sentence_1: "Chào mừng tới ứng dụng mẫu! Nhấp vào link dưới đây để kích hoạt tài khoản:"
+    password_reset:
+      reset: "Đặt lại mật khẩu"
+      sentence_1: "Chọn vào đường link để đặt lại mật khẩu:"
+      sentence_2: "Đường link có hiệu lực trong 2 giờ"
+      sentence_3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
+      link: "Đặt lại mật khẩu"
   activate: "Kích hoạt"
+  password_resets:
+    create:
+      info: "Email được gửi với hướng dẫn đặt lại mật khẩu"
+      mail_not_found: "Không thấy địa chỉ mail"
+    update:
+      empty: "không được để trống"
+      success: "Mật khẩu đã được đặt lại."
+    expired: "Đặt lại mật khẩu hết hiêu lực."
+    user_not_found: "Không tìm thấy người dùng"
+    edit:
+      password: "Mật khẩu"
+      confirmation: "Xác nhận"
+      update: "Cập nhật mật khẩu"
+      title: "Đặt lại mật khẩu"
+    new:
+      submit: "Xác nhận"
+      title: "Quên mật khẩu"
