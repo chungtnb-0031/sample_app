@@ -8,3 +8,8 @@ user:
 per_page_user : 10
 remember: "1"
 set_time_expired: 2
+content_max_length: 140
+resize_to_limit:
+  col: 400
+  row: 400
+picture_size: 5
