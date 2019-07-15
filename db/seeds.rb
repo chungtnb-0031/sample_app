@@ -26,3 +26,10 @@ User.create! name: "chung",
     activated: true,
     activated_at: Time.zone.now
 end
+
+users = User.order(:created_at).take(10)
+50.times do
+  Faker::Config.locale = :vi
+  content = Faker::Lorem.sentence(5)
+  users.each { |user| user.microposts.create!(content: content) }
+end

@@ -4,6 +4,8 @@ class User < ApplicationRecord
   before_create :create_activation_digest
   before_save :downcase_email
 
+  has_many :microposts, dependent: :destroy
+
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
   validates :email,
@@ -72,6 +74,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.set_time_expired.hours.ago
+  end
+
+  def feed
+    Micropost.new_feed_by_id id
   end
 
   private
