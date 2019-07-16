@@ -3,12 +3,6 @@ class PictureUploader < CarrierWave::Uploader::Base
   process resize_to_limit:
     [Settings.resize_to_limit.col, Settings.resize_to_limit.row]
 
-  if Rails.env.production?
-    storage :fog
-  else
-    storage :file
-  end
-
   storage :file
 
   def store_dir
