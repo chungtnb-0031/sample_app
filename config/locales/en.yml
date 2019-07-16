@@ -129,6 +129,16 @@ en:
       link_1: "Delete"
       notice: "You sure?"
     user_not_found: "User not found"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    followers:
+      title: "Followers"
+    following:
+      title: "Following"
+    show_follow:
+      view_my_profile: "View my profile"
   views:
     pagination:
       first: "« FIRST"
@@ -187,6 +197,9 @@ en:
     user_info:
       view: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "Following"
+      followers: "Followers"
 
   alert: "Maximum file size is 5MB. Please choose a smaller file."
 

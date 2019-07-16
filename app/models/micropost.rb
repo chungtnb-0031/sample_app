@@ -10,6 +10,7 @@ class Micropost < ApplicationRecord
 
   private
   def picture_size
-    errors.add(:picture, I18n.t(".error")) if picture.size > Settings.picture_size.megabytes
+    errors.add(:picture, I18n.t(".error")) if picture.size >
+                                              Settings.picture_size.megabytes
   end
 end
