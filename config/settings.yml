@@ -5,6 +5,7 @@ user_check:
 user:
   ava_size: 80
   gravatar_size: 50
+  show_follow: 30
 per_page_user : 10
 remember: "1"
 set_time_expired: 2
